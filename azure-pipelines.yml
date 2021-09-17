@@ -8,7 +8,6 @@ steps:
     submodules: true
   - task: AzureStaticWebApp@0
     inputs:
-      imageName: 'jekyll/builder:latest'
       app_location: '/'
       api_location: 'api'
       output_location: '/src'
