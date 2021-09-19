@@ -1,5 +1,3 @@
-image: self-hosted
-
 pages:
    script:
       - gem install bundler
