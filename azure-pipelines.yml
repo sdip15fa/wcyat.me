@@ -1,8 +1,7 @@
 trigger:
   - main
 
-pool:
-  image: ubuntu-latest
+pool: Azure pipelines
 steps:
   - checkout: self
     submodules: true
