@@ -1,8 +1,8 @@
 pages:
   script:
     - apt update
-    - apt install sudo
-    - sudo apt install ruby
+    - apt install sudo -y
+    - sudo apt install ruby -y
     - gem install jekyll
     - jekyll build 
   artifacts:
