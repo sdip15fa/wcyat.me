@@ -5,4 +5,4 @@ pages:
     - sudo apt install ruby ruby-dev -y 
   artifacts:
     paths:
-      - public
+      - .
