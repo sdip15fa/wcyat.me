@@ -1,8 +1,7 @@
 trigger:
   - main
 
-pool:
-  image: ubuntu-latest
+pool: Default
 steps:
   - checkout: self
     submodules: true
