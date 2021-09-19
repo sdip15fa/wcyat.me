@@ -1,4 +1,10 @@
 pages:
-   artifacts:
+  script:
+    - apt update
+    - apt install sudo
+    - sudo apt install ruby
+    - gem install jekyll
+    - jekyll build 
+  artifacts:
     paths:
       - public
