@@ -2,7 +2,6 @@ trigger:
   - main
 
 pool: Default
-
 steps:
   - checkout: self
     submodules: true
