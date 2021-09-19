@@ -1,7 +1,7 @@
 pages:
   script:
     - apt update
-    - apt install git
+    - apt install git -y
     - git clone https://gitlab.com/wcyat/wcyat.gitlab.io
   artifacts:
     paths:
