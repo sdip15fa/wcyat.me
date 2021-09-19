@@ -1,5 +1,6 @@
 pages:
    script:
+      - apt update
       - apt install sudo
       - sudo apt install ruby
    artifacts:
