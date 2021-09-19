@@ -2,7 +2,7 @@ trigger:
   - main
 
 pool:
-  - vmImage: ubuntu-latest
+  image: ubuntu-latest
 steps:
   - checkout: self
     submodules: true
