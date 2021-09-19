@@ -1,4 +1,4 @@
-image: ubuntu
+image: self-hosted
 
 pages:
    script:
