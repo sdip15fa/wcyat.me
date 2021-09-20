@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>wcyat | wcyat.me</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="wcyat" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://wcyat.me/" />
+<meta property="og:url" content="http://wcyat.me/" />
+<meta property="og:site_name" content="wcyat.me" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="wcyat" />
+<script type="application/ld+json">
+{"url":"http://wcyat.me/","@type":"WebSite","headline":"wcyat | telegram-votebot","name":"wcyat.me","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Telegram Votebot</h1>
+      <h2 class="project-tagline">wcyat.me</h2>
+    </header>
+    <main id="content" class="main-content" role="main">
+      <p>A simple telegram vote bot based on the <a href="https://github.com/python-telegram-bot/python-telegram-bot">python-telegram-bot</a> api.</p>
+      <h1>Prerequisites</h1>
+      <ul>
+        <li>Debian-based linux distros, wsl works (other distros might also work, but have not yet tested), for installation, see below</li>
+        <li>before proceeding, update and upgrade packages:</li>
+        <li><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update</code></pre></div></div></li>
+        <li><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt upgrade</code></pre></div></div></li>
+        <li>python3 and pip installed:</li>
+        <li><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install python3 python3-pip</code></pre></div></div></li>
+      </ul>
+      <h1>Deploying the bot</h1>
+      <ul type="1">
+        <li>Talk with <a href="https://t.me/botfather">@botfather</a> in telegram to create a bot, and obtain its token</li>
+        <li>Clone the repository:<br>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://gitlab.com/wcyat/telegram-votebot.git</code></pre></div></div></li>
+        <li>Switch to directory:<br>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd telegram-votebot</code></pre></div></div></li>
+        <li>Edit votebot.py:<br>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano votebot.py</code></pre></div></div><br>
+        Replace <> values with your own (eg. owner=your user id)</li>
+        <li>Start the bot:
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 votebot.py</code></pre></div></div></li>
+      </ul>
+    </main>
+    <script async defer src="https://analytics.wcyat.me/latest.js"></script>
+    <noscript><img src="https://analytics.wcyat.me/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+  </body>
+  <footer class="site-footer">
+      <center>
+          <div id="footer">
+            <a href="https://simpleanalytics.com/?utm_source=wcyat.me&utm_content=badge" referrerpolicy="origin" target="_blank"><img src="https://simpleanalyticsbadge.com/wcyat.me" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" /></a>
+            <a href="https://gitlab.com/wcyat"><img alt="gitlab" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Gitlab_font_awesome.svg/640px-Gitlab_font_awesome.svg.png"width="50" height="50"></a>
+            <a href="https://t.me/abc64899"><img alt="telegram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Telegram_2019_simple_logo.svg/640px-Telegram_2019_simple_logo.svg.png"width="48" height="48"></a>
+          </div>
+      </center>
+  </footer>
+</html>
