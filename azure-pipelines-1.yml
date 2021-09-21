@@ -1,7 +1,7 @@
 trigger:
 - main
 schedules:
-- cron: '* */6 * * *' 
+- cron: '*/6 * * * *' 
   displayName: 'sync repositories'
   branches:
     include:
