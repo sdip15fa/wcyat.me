@@ -1,0 +1,25 @@
+trigger:
+- main
+schedules:
+- cron: '* * * * *' 
+  displayName: 'sync repositories'
+  branches:
+    include:
+    - main
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - script: |
+      mkdir workfolder && cd workfolder
+      git init
+      git config --global user.email "wongchunyat@pm.me"
+      git config --global user.name "wcyat"
+      git remote add gitlab https://wcyat:$(gitlab_token)@gitlab.com/wcyat/wcyat.gitlab.io.git
+      git remote add origin https://wongchunyat:$(azure_token)@dev.azure.com/wongchunyat/wcyat.me/_git/wcyat.me
+      git branch -mv master main
+      git pull gitlab main
+      git pull origin main
+      git push origin main
+      git push gitlab main
+    displayName: 'pull and push commits'
