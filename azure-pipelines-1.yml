@@ -18,9 +18,8 @@ steps:
       git config --global user.name "wcyat"
       git remote add gitlab https://wcyat:$(gitlab_token)@gitlab.com/wcyat/wcyat.gitlab.io.git
       git remote add origin https://wongchunyat:$(azure_token)@dev.azure.com/wongchunyat/wcyat.me/_git/wcyat.me
-      git branch -mv master main
-      git pull gitlab main
-      git pull origin main
-      git push origin main
-      git push gitlab main
+      git pull gitlab master
+      git pull origin master
+      git push origin master
+      git push gitlab master
     displayName: 'pull and push commits'
