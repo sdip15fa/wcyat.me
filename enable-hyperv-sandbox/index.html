@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Slate is a responsive theme for GitHub Pages" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/slate-style.css">
-
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,700,700italic' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/slate-style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/buttons.css" />
+    <link rel="icon" href="/images/winnie.png" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,700' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,700,700italic' rel='stylesheet' type='text/css' />
     <title>wcyat | enable-hyperv-sandbox</title>
-  </head>
+</head>
 
   <body>
 
@@ -29,30 +29,35 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h2>Prerequisites</h1>
-        <ul>
-          <li>Windows 10 or newer</li>
-          <li>Internet connection required</li>
-        </ul>
-        <h2>Installing</h2>
-        <p>You can get the stable releases <a href="https://gitlab.com/wcyat/enable-hyperv-sandbox/-/releases">here</a>.<br>
-        Or you can build using visual studio (see below)</p>
-        <h1>Build</d>
-        <h2>Prerequisites</h2>
-        <ul>
-          <li>Visual studio 2019 or newer</li>
-          <li>Windows 10 or newer</li>
-        </ul>
-        <h2>Visual studio</h2>
-        <ul type="1">
-          <li>Install <a href="https://git-scm.com/downloads">git</a> if you have not.</li>
-          <li>Clone the repository:</li>
-          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://gitlab.com/wcyat/enable-hyperv-sandbox.git</code></pre></div></div>
-          <li>open ehs.sln using <a href="https://visualstudio.microsoft.com/downloads">visual studio</a></li>
-          <li>Build</li>
-        </ul>
-      </section>
+        <section id="main_content" class="inner">
+            <h1>Prerequisites</h1>
+            <ul>
+                <li>Windows 10 or newer</li>
+                <li>Internet connection required</li>
+            </ul>
+            <h1>Installing</h1>
+            <p>
+                You can get the stable releases <a href="https://gitlab.com/wcyat/enable-hyperv-sandbox/-/releases">here</a>.<br>
+                Or you can build using visual studio (see below)
+            </p>
+            <h1>Build</h1>
+            <h2>Prerequisites</h2>
+            <ul>
+                <li>Visual studio 2019 or newer</li>
+                <li>Windows 10 or newer</li>
+            </ul>
+            <h2>Visual studio</h2>
+            <ul type="1">
+                <li>Install <a href="https://git-scm.com/downloads">git</a> if you have not.</li>
+                <li>Clone the repository:</li>
+            </ul>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="git-clone">git clone https://gitlab.com/wcyat/enable-hyperv-sandbox.git</code></pre></div></div>
+            <button class="copy" id = "git-clone-button" onclick = "copytoclipboard(&quot;git-clone&quot;, &quot;git-clone-button&quot;)">Copy</button>
+            <ul>
+                <li>open ehs.sln using <a href="https://visualstudio.microsoft.com/downloads">visual studio</a></li>
+                <li>Build</li>
+            </ul>
+        </section>
     </div>
 
     <!-- FOOTER  -->
@@ -68,7 +73,8 @@
         </center>
       </footer>
     </div>
-    <script async defer src="https://analytics.wcyat.me/latest.js"></script>
-    <noscript><img src="https://analytics.wcyat.me/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    <script src="/js/copy.js"></script>
+    <script async defer src="https://sa.johnniewong.tech/latest.js"></script>
+    <noscript><img src="https://sa.johnniewong.tech/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>
 </html>

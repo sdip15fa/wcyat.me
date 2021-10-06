@@ -3,8 +3,8 @@ Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
 *******************************************************************************/
 
-@import url(normalize.css);
-@import url(pygment_trac.css);
+/*@import url(normalize.css);/
+/*@import url(pygment_trac.css);/
 
 /*******************************************************************************
 Theme Styles
@@ -92,7 +92,6 @@ a {
 }
 
 a:hover, a:focus {border-bottom: 1px solid #0090ff;}
-
 
 em {
   font-style: italic;
