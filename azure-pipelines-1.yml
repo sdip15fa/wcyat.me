@@ -5,7 +5,7 @@ schedules:
   displayName: 'sync repositories'
   branches:
     include:
-    - main
+    - master
   always: true
 pool:
   vmImage: ubuntu-latest
