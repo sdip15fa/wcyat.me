@@ -34,7 +34,7 @@
             <img src="https://gitlab.com/wcyat/simple-password-generator/-/raw/master/simple-password-generator-v1.0.png" />
             <h1>Features</h1>
             <ul>
-                <li>Copy to clipboard</li>
+                <li>Copy to clipboard (windows)</li>
             </ul>
             <h1>Options</h1>
             <pre class="highlight">
@@ -48,33 +48,27 @@
                 <li>download the <a href="https://gitlab.com/wcyat/simple-password-generator/-/releases">latest release</a> (.exe)</li>
             </ul>
             <h1>Linux</h1>
-            <p>v1.2:</p>
-            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="code1">wget https://mirror.wcyat.me/repos/releases/simple-password-generator/v1.2/https://mirror.wcyat.me/repos/releases/simple-password-generator/v1.2/simple-password-generator-v1.2.run
-#wget https://gitlab.com/wcyat/simple-password-generator/uploads/85bdc08b149b9f679bf8e87e7c9c933f/simple-password-generator-v1.2.run</code></pre></div></div>
+            <p>v2.0:</p>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="code1">wget https://mirror.wcyat.me/repos/releases/simple-password-generator/v2.0/simple-password-generator-v2.0.run
+#wget https://gitlab.com/wcyat/simple-password-generator/uploads/5453faa3cd46da2492a6fb1b1912ff2c/simple-password-generator-v2.0.run</code></pre></div></div>
             <button id="btn1" class="copy" onclick="copytoclipboard('code1', 'btn1')">Copy</button>
-            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="code2">./simple-password-generator-v1.2.run</code></pre></div></div>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="code2">./simple-password-generator-v2.0.run</code></pre></div></div>
             <button id="btn2" class="copy" onclick="copytoclipboard('code2', 'btn2')">Copy</button>
             <h1>Build</h1>
             <h2>Linux</h2>
             <h3>Prerequisites</h3>
             <ul>
                 <li>debian linux</li>
-                <li>qmake and make installed</li>
+                <li>g++</li>
             </ul>
-            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="code3">sudo apt install qt5-qmake qt5-default build-essential make</code></pre></div></div>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="code3">sudo apt install g++</code></pre></div></div>
             <button id="btn3" class="copy" onclick="copytoclipboard('code3', 'btn3')">Copy</button>
             <h3>Steps</h3>
             <div class="language-plaintext highlighter-rouge">
                 <div class="highlight">
                     <pre class="highlight"><code id="code4">git clone https://gitlab.com/wcyat/simple-password-generator.git #clone the repository
-cd simple-password-generator/linux/build
-rm -r * #clear directory
-cp -r ../code/* . #copy files from code folder
-qmake -project
-qmake
-nano Makefile #make sure pg.cpp is the only source and pg.o is the only object. remove other sources/objects
-make #compile
-mv build spg.run</code></pre>
+cd simple-password-generator/linux
+g++ pg.cpp -o spg.run</code></pre>
                 </div>
             </div>
             <button id="btn4" class="copy" onclick="copytoclipboard('code4', 'btn4')">Copy</button>
@@ -98,7 +92,7 @@ mv build spg.run</code></pre>
       </footer>
     </div>
     <script src="/js/copy.js"></script>
-    <script async defer src="https://sa.johnniewong.tech/latest.js"></script>
-    <noscript><img src="https://sa.johnniewong.tech/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    <script async defer src="https://analytics.wcyat.me/latest.js"></script>
+    <noscript><img src="https://analytics.wcyat.me/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>
 </html>
