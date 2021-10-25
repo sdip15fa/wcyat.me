@@ -3,14 +3,14 @@ let lastelement = ''
 let text = ''
 
 function sleep (ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
+  return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
 function changecopystate () {
   if (lastelement !== '') {
     document.getElementById(lastelement).innerHTML = 'Copy'
   }
-};
+}
 
 async function copytoclipboard (textid, buttonid) {
   if (document.getElementById(buttonid).innerHTML === 'Copy') {
@@ -24,4 +24,4 @@ async function copytoclipboard (textid, buttonid) {
   } else {
     alert('Already copied to clipboard!')
   }
-};
+}

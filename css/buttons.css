@@ -1,44 +1,44 @@
 .copy {
-    background-color: #e7e7e7; /* Grey */
-    width: 100%;
-    border: none;
-    color: black;
-    padding: 15px 200px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
+  background-color: #e7e7e7; /* Grey */
+  width: 100%;
+  border: none;
+  color: black;
+  padding: 15px 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
 }
 
 .next {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
 }
 
 .back {
-    background-color: #008CBA; /* Blue */
-    border: none;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
+  background-color: #008cba; /* Blue */
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
 }
 
 .return {
-    background-color: #F44336; /* Red */
-    border: none;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
 }
