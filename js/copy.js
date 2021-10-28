@@ -1,4 +1,4 @@
-// Copyright 2021 wcyat. MIT License <https://gitlab.com/wcyat/wcyat.me-dev/-/blob/master/LICENSE>.
+// Copyright 2021 wcyat. MIT License <https://gitlab.com/wcyat/wcyat.gitlab.io/-/blob/master/LICENSE>.
 let lastelement = ''
 let text = ''
 
