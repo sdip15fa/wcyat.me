@@ -13,7 +13,7 @@ function changecopystate () {
 };
 
 async function copytoclipboard (textid, buttonid) {
-  if (document.getElementById(buttonid).innerHTML === 'Copy') {
+  if (document.getElementById(buttonid).innerHTML.includes('Copy')) {
     changecopystate()
     lastelement = buttonid
     text = document.getElementById(textid).innerHTML
