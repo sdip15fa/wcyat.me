@@ -1,3 +1,0 @@
-[submodule "enable-hyperv-sandbox"]
-	path = enable-hyperv-sandbox
-	url = https://gitlab.com/wcyat/enable-hyperv-sandbox
