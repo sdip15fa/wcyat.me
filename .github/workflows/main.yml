@@ -6,7 +6,7 @@ on:
     - cron: '* * * * *'
 
 jobs:
-  build:
+  mirror:
     runs-on: ubuntu-latest
     steps:
       - name: mirror-repository
