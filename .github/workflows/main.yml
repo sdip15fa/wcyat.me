@@ -9,7 +9,5 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: mirror-repository
-        uses: spyoungtech/mirror-action@v0.4.3
-        with:
-          REMOTE: https://gitlab.com/wcyat/wcyat.gitlab.io.git
+      - run: git remote add gitlab https://gitlab.com/wcyat/wcyat.gitlab.io.git
+      - run: git pull gitlab master && git push origin master
