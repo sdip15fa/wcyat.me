@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+  schedule:
+    - cron: '* * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: mirror-repository
+        uses: spyoungtech/mirror-action@v0.4.3
+        with:
+          REMOTE: https://gitlab.com/wcyat/wcyat.gitlab.io.git
